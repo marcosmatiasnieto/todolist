@@ -1,6 +1,6 @@
 import React from 'react';
-import {Job} from './Job';
-import {NewJobForm} from './NewJobForm';
+import {Job} from '../components/Job';
+import {NewJobForm} from '../components/NewJobForm';
 
 export class Jobs extends React.Component {
     constructor() {
