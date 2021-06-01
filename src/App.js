@@ -15,7 +15,7 @@ function App() {
         <Route path="/companies" exact component={Companies} ></Route>
         <Route path="/cities" exact component={Cities} ></Route>
         <Route path="/countries" exact component={Countries} ></Route>
-
+        <Route component={Jobs}/>
       </Switch>
     </Router>
 

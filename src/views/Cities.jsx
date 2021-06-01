@@ -9,7 +9,8 @@ export class Cities extends React.Component {
   }
 
   render() {
-    return <p>{this.state.someKey}</p>;
+    return (
+    );
   }
 
 }
