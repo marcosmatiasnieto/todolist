@@ -1,4 +1,4 @@
-import { bottom } from '@popperjs/core';
+
 import axios from 'axios';
 import React from 'react';
 
@@ -40,8 +40,8 @@ export class Countries extends React.Component {
   render() {
     return (
       <form onSubmit={this.guardarPais}>
-        <table class="table">
-          <thead class="thead-dark">
+        <table className="table">
+          <thead className="thead-dark">
             <tr>
               <th scope="col">#</th>
               <th scope="col">Pais</th>
@@ -54,18 +54,18 @@ export class Countries extends React.Component {
               <tr>
                 <th scope="row">{pais.id}</th>
                 <td>{pais.name}</td>
-                <td> <button type="button" class="btn btn-danger"onClick={()=>this.eleminarPais(pais.id)} >Borrar</button> </td>
+                <td> <button type="button" className="btn btn-danger"onClick={()=>this.eleminarPais(pais.id)} >Borrar</button> </td>
               </tr>
             ))}
           </tbody>
 
         </table>
 
-        <div class="form-group">
-          <label for="pais">Pais</label>
-          <input type="text" class="form-control" id="idPais" placeholder="Ingresar pais" onChange={this.handleImput} />
+        <div className="form-group">
+          <label htmlFor="pais">Pais</label>
+          <input type="text" className="form-control" id="idPais" placeholder="Ingresar pais" onChange={this.handleImput} />
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" className="btn btn-primary">Submit</button>
         
       </form>
     );
